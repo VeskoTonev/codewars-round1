@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trainwave</title>
+
+ <link rel="stylesheet" type="text/css" href="homePage.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+</head>
+<body>
+
+<header>
+	
+	<a href="homePage.html" class="brand">Trainwave</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+
+		<div class="navigation-items">
+			<a href="homePage.html">Начало</a>
+			<a href="train.html">Влакове</a>
+			<a href="contacts.html">Контакти</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+
+  <video class="video-slide " src="1.mp4" autoplay muted loop></video>
+  <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+  <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+  <video class="video-slide" src="4.mp4" autoplay muted loop></video>
+
+	<div class="content active">
+		<h1>Пътувайте с нас <br><span>през времето и пространството</span></h1>
+		<p>От историческите железопътни маршрути до най-новите технологии на високоскоростните влакове!<br> Открийте свят, където скоростта, иновацията и комфортът се срещат.</p>
+
+		<a href="train.html">Още влакове</a>
+	</div>
+
+	<div class="content">
+		<h1>Разгледайте иновациите зад <br><span>Fuxing</span></h1>
+		<p>Най-бързият високоскоростен влак в света,<br>
+		символ на китайската железопътна независимост и технологичен напредък!</p>
+		<a href="train.html">Прочети повече</a>
+	</div>
+
+  <div class="content">
+		<h1>Открийте бъдещето със <span>Supreme  </span></h1>
+		<p>Последното поколение Shinkansen, което съчетава<br> скорост, сигурност и иновация с поглед в бъдещето!</p>
+		<a href="train.html">Прочети повече</a>
+	</div>
+
+	<div class="content">
+		<h1>Запознайте се с новото поколение Европейски влакове<br><span>TGV-M</span></h1>
+		<p>Символ на бъдещето, готов да промени пътуванията в Европа!</p>
+
+		<a href="train.html">Прочети повече</a>
+	</div>
+
+		
+	</div>
+
+
+<div class="slider-navigation">
+ <div class="nav-btn active"></div>
+ <div class="nav-btn"></div>
+ <div class="nav-btn"></div>
+ <div class="nav-btn"></div>
+</div>
+
+
+</section>
+
+<!---JS for resposive navbar----->
+
+
+<script type="text/javascript">
+	
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+
+	menuBtn.addEventListener("click", () =>{
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	} );
+
+
+//JS for video slider navbar
+
+	const btns = document.querySelectorAll(".nav-btn");
+	const slides = document.querySelectorAll(".video-slide");
+	const contents = document.querySelectorAll(".content");
+
+
+	var sliderNav = function(manual){
+     btns.forEach((btn) =>{
+     	btn.classList.remove("active");
+     });
+
+
+    slides.forEach((slide) =>{
+     	slide.classList.remove("active");
+     });
+
+
+    contents.forEach((content) =>{
+     	content.classList.remove("active");
+     });
+
+
+	btns[manual].classList.add("active");
+	slides[manual].classList.add("active");
+	contents[manual].classList.add("active");
+	}
+
+	btns.forEach((btn, i) => {
+		btn.addEventListener("click", () => {
+          sliderNav(i);
+		});
+	} );
+
+</script>
+
+
+
+</body>
+</html>

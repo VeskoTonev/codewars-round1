@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Train6</title>
+	<link rel="stylesheet" type="text/css" href="train1.css">
+</head>
+<body>
+
+	<header>
+	
+	<a href="homePage.html" class="brand">Trainwave</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+
+		<div class="navigation-items">
+			<a href="homePage.html" style="-i:1" class="active">Начало</a>
+			<a href="train.html" style="-i:2">Влакове</a>
+			<a href="contacts.html" style="-i:3">Контакти</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+	<div class="home-content">
+		<h1>Frecciarossa </h1>
+		<h3> 1000</h3>
+		<p> известен още като ETR 1000, е най-бързият и съвременен високоскоростен влак в Италия, въведен в експлоатация през 2015 г. Проектиран в партньорство между Hitachi Rail и Bombardier, той обслужва мрежата на Trenitalia, свързвайки основни италиански градове като Рим, Милано, Флоренция и Неапол с максимална скорост от 400 км/ч. Frecciarossa 1000 се отличава с аеродинамичен дизайн и модерни технологии, които не само увеличават скоростта и енергийната му ефективност, но и намаляват шума и вибрациите за по-комфортно пътуване. Влакът е също екологично устойчив, с намалени въглеродни емисии, което го прави подходящ избор за съвременния транспорт.
+
+Интериорът на Frecciarossa 1000 е проектиран с акцент върху удобството, като предлага четири различни класи на пътуване – Standard, Premium, Business и Executive – всяка от които осигурява просторни и ергономични седалки. Влакът разполага с удобства като Wi-Fi, USB портове и зони за отдих, както и с шумоизолация и стабилизатори, които осигуряват плавно и приятно пътуване дори при максимална скорост. Frecciarossa 1000 е не само символ на модерния високоскоростен транспорт в Италия, но и част от европейските високоскоростни мрежи, което позволява свързаност със страни като Франция и Швейцария, правейки го важен елемент в европейския железопътен транспорт.</p>
+
+<a href="train.html" class="btn">Разгледай други влакове</a>
+</div>
+
+<div class="home-img">
+	<div class="train">
+		<img src="Italy-train1.png">
+	</div>
+</div>
+
+<div class="train2"></div>
+</section>
+
+<script type="text/javascript">
+	//resposive navbar
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+
+	menuBtn.addEventListener("click", () =>{
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	} );
+
+
+
+</script>
+
+</body>
+</html>

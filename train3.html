@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Train3</title>
+	<link rel="stylesheet" type="text/css" href="train1.css">
+</head>
+<body>
+
+	<header>
+	
+	<a href="homePage.html" class="brand">Trainwave</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+
+		<div class="navigation-items">
+			<a href="homePage.html" style="-i:1" class="active">Начало</a>
+			<a href="train.html" style="-i:2">Влакове</a>
+			<a href="contacts.html" style="-i:3">Контакти</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+	<div class="home-content">
+		<h1>TGV M</h1>
+		<p>TGV M е най-новото поколение високоскоростен влак от серията TGV, разработено от френската компания Alstom, което се очаква да влезе в експлоатация през 2024 г. Този модел представлява технологична стъпка напред в сравнение с предходните TGV влакове, като може да достигне максимална скорост от 320 км/ч. Със своя модулен дизайн TGV M позволява лесна адаптация на броя на вагоните и капацитета според нуждите на различните маршрути. Този дизайн улеснява и поддръжката, като води до намаляване на оперативните разходи с около 20%. Влакът разполага с подобрена енергийна ефективност и иновации, които намаляват енергийната му консумация с приблизително 20% спрямо предишните модели, което го прави един от най-устойчивите високоскоростни влакове.
+
+В допълнение към устойчивостта, TGV M е проектиран с акцент върху комфорта и преживяването на пътниците. Влакът разполага с по-широки прозорци, осигуряващи по-добра видимост, и по-удобни седалки с добавени възможности за зареждане на мобилни устройства. Интериорът му включва модерни решения за шумоизолация и осветление, което допринася за по-спокойно и комфортно пътуване. TGV M също така е оборудван с най-съвременни системи за безопасност и иновативни технологии за мониторинг, които следят основни параметри в реално време. С тези характеристики TGV M се превръща в ключов елемент на френската железопътна мрежа и символ на устойчивото бъдеще на високоскоростния транспорт в Европа.</p>
+
+<a href="train.html" class="btn">Разгледай други влакове</a>
+</div>
+
+<div class="home-img">
+	<div class="train">
+		<img src="TGV-M1.png">
+	</div>
+</div>
+
+<div class="train2"></div>
+</section>
+
+<script type="text/javascript">
+	//resposive navbar
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+
+	menuBtn.addEventListener("click", () =>{
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	} );
+
+
+
+</script>
+
+</body>
+</html> 
