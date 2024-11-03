@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Train2</title>
+	<link rel="stylesheet" type="text/css" href="train2.css">
+</head>
+<body>
+
+	<header>
+	
+	<a href="homePage.html" class="brand">Trainwave</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+
+		<div class="navigation-items">
+			<a href="homePage.html" style="-i:1" class="active">Начало</a>
+			<a href="train.html" style="-i:2">Влакове</a>
+			<a href="contacts.html" style="-i:3">Контакти</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+	<div class="home-content">
+		<h1>Shinkansen N700S</h1>
+		<h3>Supreme</h3>
+		<p>Shinkansen N700S "Supreme" е най-новото поколение японски високоскоростен влак, въведен през 2020 г. от JR Central, и първият "Shinkansen" модел, създаден с най-новите инженерни иновации за последното десетилетие. Supreme е кулминация на иновациите в японския железопътен транспорт, със скорост до 300 км/ч и ново поколение двигатели, които намаляват енергийната консумация с около 7% в сравнение с предишните модели. Модулният му дизайн позволява лесна конфигурация на вагоните според нуждите, осигурявайки гъвкавост на различни маршрути.
+
+Стабилността на влака е подсилена с нова амортизационна система, която прави пътуването по-спокойно и комфортно, дори при земетресения. Supreme разполага с интелигентни системи за безопасност, като автоматично спиране при земетресение, и по-лека конструкция с иновативни технологии за мониторинг в реално време. Интериорът му е проектиран за комфорт: с повече пространство за краката, USB портове, адаптивно осветление и Wi-Fi за всяка седалка.
+N700S е и по-екологичен, с намалено тегло и аеродинамичен профил, който ограничава въздушното съпротивление и въглеродните емисии. Supreme е символ на японския напредък и ангажимент към ефективен, удобен и устойчив железопътен транспорт.</p>
+
+<a href="train.html" class="btn">Разгледай други влакове</a>
+</div>
+
+<div class="home-img">
+	<div class="train">
+		<img src="Supreme1.png">
+	</div>
+</div>
+
+<div class="train2"></div>
+</section>
+
+<script type="text/javascript">
+	//resposive navbar
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+
+	menuBtn.addEventListener("click", () =>{
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	} );
+
+
+
+</script>
+
+</body>
+</html>

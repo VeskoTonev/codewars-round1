@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Train1</title>
+	<link rel="stylesheet" type="text/css" href="train1.css">
+</head>
+<body>
+
+	<header>
+	
+	<a href="homePage.html" class="brand">Trainwave</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+
+		<div class="navigation-items">
+			<a href="homePage.html" style="-i:1" class="active">Начало</a>
+			<a href="train.html" style="-i:2">Влакове</a>
+			<a href="contacts.html" style="-i:3">Контакти</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+	<div class="home-content">
+		<h1>Fuxing</h1>
+		<h3> (CR400AF/BF)</h3>
+		<p>Fuxing (CR400AF/BF) е високоскоростен влак, въведен в Китай през 2017 г., който представлява върха на китайските железопътни технологии. Произведен е от CRRC Qingdao Sifang (CR400AF) и CRRC Changchun Railway Vehicles (CR400BF), като е първият влак, разработен изцяло с китайски патенти и технологии, демонстрирайки независимостта на страната в областта на високоскоростните влакове. Със своята максимална оперативна скорост от 350 км/ч, Fuxing е най-бързият влак в света, използван в редовна експлоатация. Влакът разполага с усъвършенствани системи за мониторинг на над 2,500 параметъра, включително скорост, температура и техническо състояние, което осигурява висока степен на безопасност и ефективност.
+
+Fuxing е с 17% по-енергийно ефективен от предишните поколения и има модулен дизайн, който може да бъде конфигуриран според нуждите на пътуващите. Той може да побере до 556 пътници и обслужва ключови маршрути като Пекин-Шанхай, като съкращава времето за пътуване до под 4.5 часа. В допълнение към скоростта и ефективността си, Fuxing играе важна роля в китайската инициатива "Един пояс, един път", свързвайки Китай с останалия свят чрез съвременен и иновативен железопътен транспорт.</p>
+
+<a href="train.html" class="btn">Разгледай други влакове</a>
+</div>
+
+<div class="home-img">
+	<div class="train">
+		<img src="fuxing1.png">
+	</div>
+</div>
+
+<div class="train2"></div>
+</section>
+
+<script type="text/javascript">
+	//resposive navbar
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+
+	menuBtn.addEventListener("click", () =>{
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	} );
+
+
+
+</script>
+
+</body>
+</html>

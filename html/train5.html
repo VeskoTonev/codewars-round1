@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Train5</title>
+	<link rel="stylesheet" type="text/css" href="train1.css">
+</head>
+<body>
+
+	<header>
+	
+	<a href="homePage.html" class="brand">Trainwave</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+
+		<div class="navigation-items">
+			<a href="homePage.html" style="-i:1" class="active">Начало</a>
+			<a href="train.html" style="-i:2">Влакове</a>
+			<a href="contacts.html" style="-i:3">Контакти</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+	<div class="home-content">
+		<h1>DRB</h1>
+		<h3>Class 41</h3>
+		<p>DRB Class 41 е мощен парен локомотив, разработен в Германия през 1930-те години за нуждите на Deutsche Reichsbahn по време на Втората световна война. Проектиран като универсален локомотив, Class 41 е част от серията "Kriegslokomotive" или "военни локомотиви", предназначени за дълги разстояния и тежки товари. Той има конфигурация 2-8-2 (известна също като "Mikado") и е способен да тегли както пътнически, така и товарни влакове, което го прави изключително гъвкав. Със своята солидна конструкция и мощност, DRB Class 41 е в състояние да се справя с натоварените маршрути и трудните условия на военните железопътни операции.
+
+Локомотивът DRB Class 41 е проектиран с капацитет да достигне скорост от около 90 км/ч, което е впечатляващо за товарен локомотив от този период. След войната голям брой от тези локомотиви остават в експлоатация и са модернизирани, за да отговорят на нуждите на следвоенната германска железопътна мрежа, като много от тях продължават да се използват до 70-те години. Днес някои от локомотивите от серията Class 41 са запазени и възстановени като исторически експонати и се използват за туристически пътувания, запазвайки паметта за един от най-издръжливите и универсални германски парни локомотиви.</p>
+
+<a href="train.html" class="btn">Разгледай други влакове</a>
+</div>
+
+<div class="home-img">
+	<div class="train">
+		<img src="German.png">
+	</div>
+</div>
+
+<div class="train2"></div>
+</section>
+
+<script type="text/javascript">
+	//resposive navbar
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+
+	menuBtn.addEventListener("click", () =>{
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	} );
+
+
+
+</script>
+
+</body>
+</html>

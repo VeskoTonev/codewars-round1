@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Train4</title>
+	<link rel="stylesheet" type="text/css" href="train1.css">
+</head>
+<body>
+
+	<header>
+	
+	<a href="homePage.html" class="brand">Trainwave</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+
+		<div class="navigation-items">
+			<a href="homePage.html" style="-i:1" class="active">Начало</a>
+			<a href="train.html" style="-i:2">Влакове</a>
+			<a href="contacts.html" style="-i:3">Контакти</a>
+		</div>
+	</div>
+
+</header>
+
+<section class="home">
+	<div class="home-content">
+		<h1>The Flying Scotsman</h1>
+		
+		<p>The Flying Scotsman е един от най-емблематичните парни локомотиви в историята, въведен в експлоатация през 1923 г. от Лондон и Североизточната железопътна компания (LNER). Проектиран от британския инженер сър Найджъл Гресли, локомотивът е първият в света, достигнал скорост от 160 км/ч, поставяйки рекорди в скоростта и ефективността на железопътния транспорт. Със своите изящни зелени корпуси и мощна конструкция, The Flying Scotsman обслужва прочутия директен маршрут между Лондон и Единбург, съкращавайки времето за пътуване и добавяйки комфорт и стил на този класически железопътен коридор. През годините локомотивът се утвърждава като символ на британските железопътни иновации и инженерни постижения, като вдъхновява множество модерни разработки.
+
+След активна експлоатация, през 1963 г. The Flying Scotsman е пенсиониран, но поради историческата му стойност и популярност сред обществото е възстановен и модернизиран за туристически пътувания. През 2016 г., след мащабна реставрация, която продължава над 10 години, локомотивът отново влиза в експлоатация и се използва за специални пътувания и събития, превръщайки се в подвижен музей на колела. Днес The Flying Scotsman продължава да очарова железопътни ентусиасти и туристи по целия свят със своето историческо значение и уникален дизайн, представлявайки златната ера на британските парни влакове.</p>
+
+<a href="train.html" class="btn">Разгледай други влакове</a>
+</div>
+
+<div class="home-img">
+	<div class="train">
+		<img src="ENG-train1.png">
+	</div>
+</div>
+
+<div class="train2"></div>
+</section>
+
+<script type="text/javascript">
+	//resposive navbar
+	const menuBtn = document.querySelector(".menu-btn");
+	const navigation = document.querySelector(".navigation");
+
+	menuBtn.addEventListener("click", () =>{
+		menuBtn.classList.toggle("active");
+		navigation.classList.toggle("active");
+	} );
+
+
+
+</script>
+
+</body>
+</html>
